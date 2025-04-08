@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Perguntas Frequentes</title>
+    <title>Informações</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
         <h1>ES ADVISOR</h1>
@@ -15,32 +17,41 @@
                 <li><a href="home.html">Boas-Vindas MVP</a></li>
                 <li><a href="simulador.html">Simulador</a></li>
                 <li><a href="assistencia.html">Assistência</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <div class="container">
-        <h2>Perguntas Frequentes</h2>
+        <h2>Políticas e Perguntas Frequentes</h2>
+
+        <h3>Política de Privacidade</h3>
+        <p>Respeitamos sua privacidade e protegemos seus dados conforme a LGPD. Nenhuma informação pessoal é armazenada sem o seu consentimento.</p>
+
+        <h3>Termos de Uso</h3>
+        <p>....</p>
+
+        <h3>Perguntas Frequentes</h3>
         <div class="faq-item">
-            <div class="faq-question" role="button">O que é um ataque de engenharia social?</div>
+            <button class="faq-question">O que é um ataque de engenharia social?</button>
             <div class="faq-answer">É uma técnica usada por hackers para manipular pessoas e obter informações confidenciais.</div>
         </div>
         <div class="faq-item">
-            <div class="faq-question" role="button">Como posso me proteger de ataques?</div>
+            <button class="faq-question">Como posso me proteger de ataques?</button>
             <div class="faq-answer">Nunca compartilhe senhas, evite clicar em links suspeitos e mantenha seus softwares atualizados.</div>
         </div>
         <div class="faq-item">
-            <div class="faq-question" role="button">O ES Advisor pode me ajudar em tempo real?</div>
+            <button class="faq-question">O ES Advisor pode me ajudar em tempo real?</button>
             <div class="faq-answer">Nosso sistema oferece dicas e simulações para aumentar sua segurança digital.</div>
         </div>
-    
+    </div>
+
     <script src="src/faq.js"></script>
     <script>
         function toggleMenu() {
             document.querySelector('.nav-menu').classList.toggle('active');
         }
     </script>
-
 </body>
+
 </html>
