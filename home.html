@@ -10,11 +10,12 @@
     <header>
         <h1>ES ADVISOR</h1>
         <nav>
-            <ul>
-                <li><a href="home.html">Boas-Vindas MVP</a></li>
-                <li><a href="simulador.html">Simulador</a></li>
-                <li><a href="assistencia.html">Assistência</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="nav-links">
+              <li><a href="home.html">Boas-Vindas MVP</a></li>
+              <li><a href="simulador.html">Simulador</a></li>
+              <li><a href="assistencia.html">Assistência</a></li>
+              <li><a href="faq.html">FAQ</a></li>
             </ul>
         </nav>
     </header>
@@ -22,5 +23,10 @@
         <h2>Bem-vindo ao ES Advisor</h2>
         <p>Escolha uma opção no menu para começar.</p>
     </div>
+    <script>
+        function toggleMenu() {
+          document.getElementById("nav-links").classList.toggle("active");
+        }
+      </script>
 </body>
 </html>
