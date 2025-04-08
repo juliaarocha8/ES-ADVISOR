@@ -139,11 +139,10 @@ button:hover {
     border-radius: 5px;
 }
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
-        margin: 0 auto;
+        margin: 10px auto;
     }
 
     .nav-menu ul {
