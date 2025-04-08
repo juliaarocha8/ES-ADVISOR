@@ -118,6 +118,18 @@ textarea::placeholder {
     font-style: italic;
 }
 
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-left: 4px solid #4CAF50;
+}
+
+.faq-answer.open {
+    display: block;
+}
+
+
 
 /* mobile */
 
