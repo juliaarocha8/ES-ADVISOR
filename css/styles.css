@@ -118,6 +118,20 @@ textarea::placeholder {
     font-style: italic;
 }
 
+.faq-question {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.faq-question:hover {
+    background-color: #45a049;
+}
+
+
 .faq-answer {
     display: none;
     padding: 10px;
