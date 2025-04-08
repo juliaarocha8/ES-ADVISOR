@@ -71,7 +71,8 @@ button:hover {
     text-align: left;
 }
 
-.assistencia-form input,
+.assistencia-form input[type="text"],
+.assistencia-form input[type="email"],
 .assistencia-form textarea,
 .assistencia-form select {
     width: 100%;
@@ -87,7 +88,8 @@ button:hover {
     outline: none;
 }
 
-.assistencia-form input:focus,
+.assistencia-form input[type="text"]:focus,
+.assistencia-form input[type="email"]:focus,
 .assistencia-form textarea:focus,
 .assistencia-form select:focus {
     border-color: #4CAF50;
