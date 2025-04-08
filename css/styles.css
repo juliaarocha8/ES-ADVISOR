@@ -48,8 +48,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
-    width: 100%;
+    justify-content: center;
+    width: 90%; /* responsivo em telas menores */
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
@@ -57,11 +57,6 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: left;
-}
-
-.assistencia-container h2 {
-    margin-bottom: 15px;
-    font-size: 24px;
 }
 
 .assistencia-form {
@@ -77,72 +72,37 @@ button:hover {
 }
 
 .assistencia-form input,
-.assistencia-form textarea 
+.assistencia-form textarea,
 .assistencia-form select {
-
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px; 
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
 .assistencia-form button {
-    margin-top: 15px;
+    align-self: center;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .assistencia-form button:hover {
     background-color: #45a049;
 }
 
-.assistencia-form select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.faq-item {
-    margin: 10px 0;
-    text-align: left;
-}
-
-.faq-question {
-    width: 100%;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.faq-question:hover {
-    background-color: #45a049;
-}
-
-.faq-answer {
-    display: none;
-    padding: 10px;
-    background-color: #f1f1f1;
-    border-left: 4px solid #4CAF50;
-}
-
 textarea::placeholder {
-    color: #bbb;
+    color: #999;
     font-style: italic;
-    font-size: 14px;
 }
 
 
