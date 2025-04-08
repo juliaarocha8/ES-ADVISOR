@@ -9,7 +9,8 @@
 <body>
     <header>
         <h1>ES ADVISOR</h1>
-        <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="nav-menu">
             <ul>
                 <li><a href="home.html">Boas-Vindas MVP</a></li>
                 <li><a href="simulador.html">Simulador</a></li>
@@ -41,5 +42,10 @@
         </form>
     </div>
     <script src="src/assistencia.js"></script>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
