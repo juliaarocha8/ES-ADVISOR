@@ -83,6 +83,7 @@ button:hover {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .assistencia-form button {
@@ -126,6 +127,13 @@ button:hover {
     background-color: #f1f1f1;
     border-left: 4px solid #4CAF50;
 }
+
+textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+
 
 /* mobile */
 
