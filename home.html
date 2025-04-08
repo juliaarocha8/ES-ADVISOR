@@ -9,8 +9,8 @@
 <header>
   <h1>ES Advisor</h1>
   <nav>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <ul id="nav-links">
+    <button class="menu-toggle">☰</button>
+    <ul class="nav-links">
       <li><a href="home.html">Boas-Vindas MVP</a></li>
       <li><a href="simulador.html">Simulador</a></li>
       <li><a href="assistencia.html">Assistência</a></li>
@@ -23,9 +23,12 @@
         <p>Escolha uma opção no menu para começar.</p>
     </div>
     <script>
-        function toggleMenu() {
-          document.getElementById("nav-links").classList.toggle("active");
-        }
-      </script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+    
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>

@@ -129,47 +129,38 @@ button:hover {
 /* mobile */
 
 .menu-toggle {
-        display: none;
-        font-size: 24px;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-        margin-bottom: 10px;
-    }
-    
-   
-    @media (max-width: 768px) {
-        nav ul {
-            display: none;
-            flex-direction: column;
-            background-color: #333;
-            position: absolute;
-            top: 60px;
-            right: 10px;
-            width: 200px;
-            padding: 10px;
-            border-radius: 5px;
-            z-index: 1000;
-        }
-    
-        nav ul.active {
-            display: flex;
-        }
-    
-        nav ul li {
-            margin: 10px 0;
-        }
-    
-        .menu-toggle {
-            display: block;
-            position: absolute;
-            top: 15px; 
-            right: 15px; 
-        }
-        nav {
-            position: relative;}   
-    }
-    
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
 
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
 }
